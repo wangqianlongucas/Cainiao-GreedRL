@@ -580,6 +580,7 @@ Then, create and activate a python environment using conda, and install required
 $ conda create -n python38 python==3.8
 $ source activate python38
 $ pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu113
+$ # 腾讯云服务器可加 -i http://mirrors.cloud.tencent.com/pypi/simple
 ```
 Finally, compile and add the resulting library `greedrl` to the `PYTHONPATH`
 ```aidl
