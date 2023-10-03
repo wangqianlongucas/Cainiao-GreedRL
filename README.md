@@ -590,6 +590,8 @@ $ export PYTHONPATH={your_current_path}/build/lib.linux-x86_64-cpython-38/:$PYTH
 
 ## CVRP Training
 
+ > 新环境都添加一下路径： export PYTHONPATH={your_current_path}/build/lib.linux-x86_64-cpython-38/:$PYTHONPATH
+
 1. Training data
 
 We use generated data for the training phase, the customers and depot locations are randomly generated in the unit square [0,1] X [0,1]. For CVRP, we assume that the demand of each node is a discrete number in {1,...,9}, chosen uniformly at random, and each vehicle has a default capacity of 50.
