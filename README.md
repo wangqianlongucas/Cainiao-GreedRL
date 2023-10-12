@@ -583,6 +583,8 @@ $ pip install -r requirements.txt --extra-index-url https://download.pytorch.org
 $ # 腾讯云服务器可加 -i http://mirrors.cloud.tencent.com/pypi/simple
 ```
 Finally, compile and add the resulting library `greedrl` to the `PYTHONPATH`
+> 如果编译失败，与-fvisibility=hidden -fopenmp相关，可将其删除（可能是版本更新，现在不存在这两个参数了）
+> CMakeLists.txt: line42 : add_compile_options(-D_GLIBCXX_USE_CXX11_ABI=0 -fvisibility=hidden -fopenmp)  --> add_compile_options(-D_GLIBCXX_USE_CXX11_ABI=0)
 ```aidl
 $ python setup.py build
 $ export PYTHONPATH={your_current_path}/build/lib.linux-x86_64-cpython-38/:$PYTHONPATH
